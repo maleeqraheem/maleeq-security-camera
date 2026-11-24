@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Camera</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <!--Creating  a navigation menu-->
+    <nav>
+            <!--Creating a list of links  -->
+         
+        <ul id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown-btn"><a href="#about">About us  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">   <!--Creating dropdown contents for the the links with dropdown menu  -->
+          <a href="#why-us">Why choose us  </a>
+            <a href="#who-we-are">Who we are </a>
+            <a href="#partners">Our partners </a>
+          
+            </div>
+            </li>
+            <li class="dropdown-btn"><a href="#services">Our Services  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+            <a href="#best-services">Best services  </a>
+            <a href="#working-process">Working process </a>
+            <a href="#testimonials">Testimonials </a>
+            </div></li>
+    
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#products">Products</a></li>
+        </ul>
+        <!--creating social icons that links various socials -->
+        <div class="social-icons" style="display: flex; align-items: center;">
+            <a href="https://wa.me/2348077564104?text=hi%20maleeq%20consistency%20is%20key" target="_blank">  <i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/1GwFAbmG6W/?mibextid=wwXIfr" target="_blank">  <i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/m_alee_q/profilecard/?igsh=MXV4dnFpMXQ3cTNpdA==" target="_blank">  <i class="fa-brands fa-square-instagram"></i></a>
+            <div class="cart-icon">
+                <a href="#cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+  <span id="cart-count">0</span>
+</div>
+    
+        </div>
+      
+    </nav>
+</header>
+<!--Creating the sections of the site -->
+<main>
+<!--creating the hero section which is also Home-->
+<section class="full-hero" id="home">
+    <!--creating the first part of the hero section -->
+    <div class="hero-partone">
+    <div class="hero-writeup">
+        <!--creating the text part of the first part of the hero section -->
+        <div class="hero-texts">
+        <h1>Professional <mark>Security Services </mark> You Can Trust </h1>
+        <p>Stay connected and secure with modern surveillance solutions built to protect your world.Peace of mind starts with the right vision.
+          Experience cutting-edge camera technology with real-time monitoring, crystal-clear footage, and total control from any device. Keep your property safe — anytime, anywhere.</p>
+         
+            </div>
+            <!--creating the counter number part of the first part of the hero section -->
+            <div class="hero-counters"> 
+                <div class="counters">
+                     <h1>11</h1>
+                     <h3>Experience </h3>
+                </div>
+                 <div class="counters">
+                     <h1>25</h1>
+                     <h3>Product </h3>
+                </div>
+                 <div class="counters">
+                     <h1>10+</h1>
+                     <h3>Projects Done </h3>
+                </div>
+                  <div class="counters">
+                     <h1>10</h1>
+                     <h3>Awards </h3>
+                </div>
+            </div>
+              <!-- <a href="#" class="writeup-btn">View Products <i class="fa-solid fa-money-check-dollar"></i></a> -->
+    </div>
+    <!--adding image and a CTA to the first part of the hero section  -->
+    <div class="hero-visuals">
+    
+        <img src="images/herocamera.jpg" alt="camera" width="300" height="300">   <!--adding the image -->
+      <a href="#products">  <button class="buy-btn">    <i class="fa-solid fa-cart-shopping"></i></button> <!--adding the CTA --> </a>
+    </div>
+</div>
+<!--creating the second part of the hero section -->
+<div class="hero-parttwo"><!--the conatiner for grids of cards  -->
+    <!--creating the each of the cards -->
+<div class="hero-card">
+     <i class="fa-solid fa-lightbulb"></i>
+     <h3>Innovation</h3>
+     <p>Driven by innovation — we design smarter ways to protect what matters most </p>
+</div>
+<div class="hero-card">
+ <i class="fa-solid fa-certificate"></i>
+     <h3>High Quality</h3>
+     <p>High-definition visuals and reliable build quality you can trust every day. </p>
+</div>
+<div class="hero-card">
+   <i class="fa-solid fa-circle-check"></i>
+     <h3>Best Product</h3>
+     <p>Top-rated security cameras designed for superior performance and protection.</p>
+</div>
+<div class="hero-card">
+   <i class="fa-solid fa-handshake"></i>
+     <h3>Top Services </h3>
+     <p>We provide dependable services that keep your security systems running perfectly.</p>
+</div>
+
+
+</div>
+
+</section>
+    <!--creating the about section-->
+        <!--creating the first part of the about section-->
+    <div class="about-partone" id="about">
+          <!--creating the media part for the first part of the about section-->
+        <div class="media-part">
+            <div class="media-partup">
+                <!-- creating a button that when clicked a modal with a video appears  -->
+             <button  id="openModal" class="play-btn" >    <i class="fa-solid fa-play"></i></button>
+             </div>
+             <!-- the modal that pops up when the button is clicked  -->
+   <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video id="myVideo" width="100%" controls>
+        <source src="22972-360.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div> 
+             <div class="media-partdown">
+             <img src="images/camerabottom.jpg" alt="picture-about"  width="100" height="100">
+              </div>
+        </div>
+          <!--creating the about us part for the first part of the about section-->
+        <div class="aboutus-part" >
+         <h1>About Us </h1>
+         <p>We believe safety shouldn’t be a luxury — it’s a necessity. Our mission is to provide reliable, high-quality security solutions 
+            that protect what matters most to you. From homes and offices to large-scale facilities, we deliver advanced surveillance systems designed to keep you informed, in control, and at ease.</p>
+            <p>With years of experience in the security industry, our team combines cutting-edge technology with real-world expertise to create smart, effective, and easy-to-manage systems.
+                 Whether you need CCTV installation, remote monitoring, or complete security integration, we tailor every solution to your specific needs.</p>
+                 <p>We pride ourselves on professionalism, integrity, and exceptional customer service. Every project we take on is a promise — to secure your space, safeguard your assets, and give you peace of mind.</p>
+    <a href="#contact">Contact Us  </a>
+        </div>
+          <!--creating the why choose us part for the first part of the about section-->
+        <div class="whyus-part" id="why-us">
+            <h1>Why Choose Us</h1>
+            <p>We don’t just provide security systems; we provide confidence. Discover what sets us apart and why we’re the trusted choice for lasting protection.</p>
+            
+      <h1><i class="fa-solid fa-thumbs-up"></i>     23 years experience </h1>
+      <p>We’ve mastered the art of protection through experience — delivering security systems that are smart, dependable, and made to last. </p>
+       <h1><i class="fa-solid fa-headset"></i>     24/7 support  </h1>
+      <p>Your safety doesn’t take a break, and neither do we. Get reliable, round-the-clock support whenever you need help or maintenance. </p>
+       <h1><i class="fa-solid fa-file-lines"></i>     5+ Industry Certified  </h1>
+      <p>Industry-certified professionals, proven expertise. We follow best practices to deliver secure, reliable, and compliant solutions every time.</p>
+
+
+        </div>
+    </div>
+           <!--creating another mini section just after the about  which is the who we are -->
+    <div class="after-about" id="who-we-are">
+    <div class="sec-sol">
+        <!--adding the text to the after about section  -->
+    <h1>Security Solutions for Your Work and Home</h1>
+    <p>Protect what matters most with smart, reliable security systems. From advanced surveillance cameras to intelligent monitoring tools, we provide solutions that keep your property safe and give you peace of mind — whether you’re at home, at work, or on the go</p>
+<!--adding a link to the after hero section -->
+    <a href="#products">Explore Products  </a>
+   
+
+
+</div>
+ 
+</div>
+
+      <!--creating the second part of the about section-->
+<div class="about-parttwo" id="partners">
+        <!--creating the write up of the  second part of the about section-->
+    <div class="part-writeup">
+        <h1>Our Partners</h1>
+        <!-- <p>Together with our valued partners, we bring you cutting-edge technology and dependable protection you can count on. We’re proud to work with trusted partners who share our commitment to quality, 
+            innovation, and security excellence. Our strong network of partners helps us deliver reliable, high-performance security solutions across every project.
+        Our partners play a key role in helping us protect what matters most — your safety and peace of mind.</p>
+           -->
+    </div>
+         <!--creating the sponsors logo on the second part of the about section-->
+    <div class="part-logos">
+        <img src="images/logo1.jpg" alt="logo1" width="200" height="200">
+         <img src="images/logo2.jpg" alt="logo2" width="200" height="200">
+          <img src="images/logo3.jpg" alt="logo3" width="200" height="200">
+            <img src="images/logo4.jpg" alt="logo4" width="200" height="200">
+              <!-- <img src="images/logo5.jpg" alt="logo5" width="200" height="200"> -->
+    </div>
+</div>
+</section>
+<!--developing the our service section-->
+ <section class="services-sec" id="services">
+<!--developing the best services of the our service section-->
+    <div class="bestservice-sec" id="best-services">
+ <!--creating the write up section of the best service section -->
+        <div class="bestservice-writeup">
+            <h1>We Provide the Best Services </h1>
+            <div class="para-link">
+                    <p>
+                        From installation to maintenance, we provide the best security camera services designed to keep your home and business protected 24/7.
+                      
+                    </p>
+                    <a href="#contact">Contact us for our service <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+        </div>
+         <!--creating the card section of the best service section -->
+        <div class="bestservice-card">
+            <div class="bestcard-dif">
+         <i class="fa-solid fa-camera"></i>
+                <h1>Security Camera</h1>
+                <p>High-definition security cameras designed to capture every detail and keep your property safe, day and night.</p>
+            </div>
+ <div class="bestcard-dif">
+        <i class="fa-solid fa-bell"></i>
+                <h1>Fire Detection</h1>
+                <p>Advanced fire detection technology built for precision, reliability, and instant alerts when every second counts.</p>
+            </div>
+             <div class="bestcard-dif">
+       <i class="fa-solid fa-house-signal"></i>
+                <h1>Smart Home</h1>
+                <p>High-definition security cameras designed to capture every detail and keep your property safe, day and night.</p>
+            </div>
+        </div>
+
+    </div>
+       <!--creating the working process section of  the best service section -->
+    <div class="working-process" id="working-process">
+          <!--creating the write up of the working process section of  the best service section -->
+        <div class="working-writeup">
+            <h1>Our Working Process</h1>
+            <p>From consultation to installation, we follow a simple and transparent process. We start by understanding your needs,
+                 then design a security solution that fits perfectly. Our experts handle installation with precision, test every system for performance, and provide full support to keep your property protected 24/7.</p>
+        </div>
+           <!--creating the card sections of the working process section of  the best service section -->
+        <div class="card-illustration">
+            <div class="working-card">
+                <i class="fa-solid fa-people-arrows"></i>
+                <h1>Discussion</h1>
+                <p>We believe the first step to great security is understanding what matters most to you. Through open discussion, we design a plan that delivers complete peace of mind from day one.</p>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+               <div class="working-cardy">
+             <i class="fa-solid fa-gears"></i>
+                <h1>Installation</h1>
+                <p>With years of hands-on experience, our experts install every component to perfection — no loose ends, no weak spots, just solid protection you can rely on day and night and anytine.</p>
+            </div>
+             <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                  <div class="working-card">
+               <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h1>Maintenance</h1>
+                <p>Your safety doesn’t stop after installation. We provide ongoing maintenance and support to keep your system in perfect working condition, giving you lasting peace of mind.</p>
+            </div>
+        </div>
+    </div>
+    <!-- creating the testimonial part of the services section -->
+    <div class="testimonials-sec" id="testimonials">
+        <h1>Testimonials</h1>
+        <!-- creating the first row of cards  -->
+        <div class="test-row">
+            <!-- creating the cards itself -->
+            <div class="test-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+</div>
+<p>“They delivered exactly what they promised — top-notch security solutions and excellent support. Our home feels safer than ever.”</p>
+<div class="testcard-bottom">
+    <img src="passport/passport1.jpg" alt="passpor1" width="70" height="70">
+    <h2>Red Sultana- <em>client</em> </h2>
+
+</div>
+            </div>
+                  <div class="test-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+</div>
+<p>“The installation was smooth, and their team was super professional. I can finally relax knowing my property is fully protected.”</p>
+<div class="testcard-bottom">
+    <img src="passport/passport2.jpg" alt="passpor1" width="70" height="70">
+   <h2>Jaxk Ubong- <em>client</em> </h2>
+
+</div>
+            </div>
+        </div>
+        <!-- creating the second row of cards  -->
+   <div class="test-row">
+                  <div class="test-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+</div>
+<p>“Our office security has improved greatly since we partnered with them. Reliable service, quick response, and high-quality products.”</p>
+<div class="testcard-bottom">
+    <img src="passport/passport3.jpg" alt="passpor1" width="70" height="70">
+   <h2>Alicia Keys- <em>client</em> </h2>
+
+</div>
+            </div>
+                  <div class="test-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+</div>
+<p>“From consultation to installation, everything was handled with care. They explained every step and made sure I understood how the system worked.”</p>
+<div class="testcard-bottom">
+    <img src="passport/passport4.jpg" alt="passpor1" width="70" height="70">
+    <h2>John Doe- <em>client</em> </h2>
+
+</div>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- creating the contact section  -->
+<section class="contact-sec" id="contact">
+    <!-- creating the write up part of the contact section  -->
+    <div class="contact-writeup" >
+<h1> Monitor your Workplace From your Phone</h1>
+<p>Stay in control, even when you’re away. With our smart security camera systems, 
+    you can watch live footage directly from your phone—whether you’re at home, at work, or on the go. Get instant alerts, review recordings, and keep an eye on what matters most with just a tap.</p>
+<a href="mailto:maleeqrahee@gmail.com">Send Us a Mail</a>
+    </div>
+    <!-- adding an image for style -->
+    <div class="contact-image" style="position: relative; justify-content: center;">
+        <img src="images/transparentcam.png" alt="camera" width="450" height="450" " >
+ 
+    </div>
+    <!-- creating the contact form  -->
+    <div class="contact-forms" style="position:relative; justify-content: center; padding: 10px;">
+        <h1 >Contact Us</h1>
+        <form action=""  class="contact-form" id="contactform" style="display:block; justify-content: center; box-sizing: border-box;" novalidate>
+          
+    <input type="text" id="fname" name="fname" placeholder="Enter your full name" required>
+    <div id="nameError" class="error">Please enter your full name.</div>
+
+    <input type="email" id="contactemail" placeholder="Enter your email address" required>
+    <div id="emailError" class="error">Please enter a valid email address.</div>
+
+    <textarea id="message" placeholder="Type your message to us" required></textarea>
+    <div id="messageError" class="error">Please enter the message you want to send.</div>
+
+    <input type="submit" value="Contact Us">
+
+  
+    <!-- Modal showing user details -->
+    <div class="contactmodal" id="contactmodal">
+      <div class="contactmodal-content">
+        <span class="close" id="closecontactmodal">&times;</span>
+        <p id="contactMessage"></p>
+        <button id="okay">OK</button>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="successmodal" id="successmodal">
+      <div class="successmodal-content">
+        <p>Message successfully sent!</p>
+      </div>
+    </div>
+        </form>
+
+    </div>
+
+</section>
+<!--creating the product section  -->
+<section class="product" id="products">
+    <!-- ccreating the first row of the product section because i am using flex -->
+<div class="product-row">
+    <!-- creating the individual card in the row  -->
+    <div class="product-card">
+        <img src="Products/product one.png" alt="" width="100" height="200">
+        <h1>Dome Camera</h1>
+        <p>The Dome Camera is one of the most common and versatile CCTV cameras used for indoor surveillance</p>
+        <h1> $10.00</h1>
+        <button class="product-btn add-to-cart" data-name="Dome Camera" data-price="10"  data-image="Products/product one.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product two.png" alt="" width="100" height="200">
+        <h1>Bullet Camera</h1>
+        <p>The Bullet Camera is designed for long-distance surveillance it is cylindrical shape and used outdoors mostly</p>
+        <h1> $8.00</h1>
+       <button class="product-btn add-to-cart" data-name="Bullet Camera" data-price="8"  data-image="Products/product two.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product three.png" alt="" width="100" height="200">
+        <h1>PTZ Camera</h1>
+        <p>Can move left/right (pan), up/down (tilt), and zoom in/out covers Large areas — malls, stadiums, public spaces</p>
+        <h1> $22.00</h1>
+ <button class="product-btn add-to-cart" data-name="PTZ Camera" data-price="22"  data-image="Products/product three.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product four.png" alt="" width="100" height="200">
+        <h1>C-Mount Camera</h1>
+        <p>Box-style with detachable lens Changeable lenses for different viewing distances bulky but professional look</p>
+        <h1> $15.00</h1>
+ <button class="product-btn add-to-cart" data-name="C-Mount Camera" data-price="15"  data-image="Products/product four.png">Buy Now</button>
+    </div>
+
+</div>
+<!-- creating the second row  -->
+<div class="product-row">
+    <!-- creating the individual cards also  -->
+    <div class="product-card">
+        <img src="Products/product five.png" alt="" width="100" height="200">
+        <h1>Day/Night Camera</h1>
+        <p>24-hour surveillance, indoor or outdoor.Works well in both bright and low-light condition, not infrared</p>
+        <h1> $12.00</h1>
+        <button class="product-btn add-to-cart" data-name="Day/Night Camera" data-price="12"  data-image="Products/product five.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product six.png" alt="" width="100" height="200">
+        <h1>Network/IP Camera</h1>
+        <p>Remote monitoring via the internet,Sends video data over Wi-Fi or Ethernet. Modern smart systems often use these</p>     
+        <h1> $6.00</h1>
+        <button class="product-btn add-to-cart" data-name="Network/IP Camera" data-price="6"  data-image="Products/product six.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product seven.png" alt="" width="100" height="200">
+        <h1>Wireless Camera</h1>
+        <p>Has Easy installation with no cabling - homes small businesses, transmits video over Wi-Fi connected to mobile devices </p>
+        <h1> $9.00</h1>
+      <button class="product-btn add-to-cart" data-name="Wireless Camera" data-price="9"  data-image="Products/product seven.png">Buy Now</button>
+    </div>
+        <div class="product-card">
+        <img src="Products/product eight.png" alt="" width="100" height="200">
+        <h1>Thermal Camera</h1>
+        <p>Detecting heat signatures — industrial sites, borders, fire detection Detects body heat or hot objects for security</p>
+        <h1> $11.00</h1>
+         <button class="product-btn add-to-cart" data-name="Thermal Camera" data-price="11"  data-image="Products/product eight.png">Buy Now</button>
+    </div>
+
+</div>
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    Product successfully added to cart  <i class="fa-solid fa-check"></i>
+  </div>
+</div>
+</section>
+<section class="cart" id="cart">
+  <h2>Your Cart</h2>
+
+  <div id="empty-cart">
+    <p><i class="fa-solid fa-cart-arrow-down"></i> Your cart is empty</p><hr>
+    <small>Add products to see them here</small>
+  </div>
+
+  <ul id="cart-items"></ul>
+
+  <p>Total: $<span id="cart-total">0</span></p>
+
+  <button id="checkout-btn" disabled>Checkout</button>
+</section>
+<section id="checkout" class="hidden">
+  <div class="checkout-container">
+
+    <!-- HEADER -->
+    <div class="checkout-header">
+      <h2>Checkout</h2>
+      <p>Please complete your order details</p>
+    </div>
+
+    <form id="checkout-form">
+
+      <!-- CUSTOMER INFO -->
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+      </div>
+
+      <!-- DELIVERY OPTIONS -->
+      <div class="delivery-section">
+        <h3>Delivery Method</h3>
+
+        <label class="radio-card">
+          <input type="radio" name="delivery" value="3">
+          <span>Home Delivery</span>
+          <small>$3 delivery fee</small>
+        </label>
+
+        <label class="radio-card">
+          <input type="radio" name="delivery" value="0">
+          <span>Store Pickup</span>
+          <small>Free</small>
+        </label>
+      </div>
+
+      <!-- ADDRESS -->
+      <div id="address-field" class="form-group hidden">
+        <label>Delivery Address</label>
+        <input type="text" id="address" placeholder="Enter your delivery address">
+      </div>
+<!-- ORDER ITEMS PREVIEW -->
+<div class="checkout-items">
+  <h3>Your Items</h3>
+  <div id="checkout-items-list"></div>
+</div>
+
+      <!-- ORDER SUMMARY -->
+      <div class="checkout-summary">
+        <p>
+          <span>Subtotal</span>
+          <span>$<span id="checkout-subtotal">0.00</span></span>
+        </p>
+        <p>
+          <span>Delivery</span>
+          <span>$<span id="delivery-fee">0.00</span></span>
+        </p>
+        <hr>
+        <p class="total">
+          <strong>Total</strong>
+          <strong>$<span id="checkout-total">0.00</span></strong>
+        </p>
+      </div>
+
+      <button type="submit" class="place-order-btn">
+        Place Order
+      </button>
+
+    </form>
+  </div>
+</section>
+
+
+
+</main>
+
+<!--Creating the footer section-->
+<footer>
+    <!--News letter section-->
+    <div class="newsletter-sec" >
+         <!--News letter writeup-->
+        <div class="newsletter-writeup">
+            <h1>Our Newsletters </h1>
+            <p>Join our newsletter to receive the latest updates on home and business security, product releases, and smart tips to keep your property protected.</p>
+        </div>
+         <!--News letter form-->
+        <form action="" class="newsletter-form" id="newsletterForm"  style="display:flex;gap: 10px; position: relative; justify-content:center; box-sizing: border-box;width: 40%;"  " novalidate>
+            <input type="email"   id="emailInput" placeholder="Enter your email address"  required>
+            <input type="submit" value="Subscribe" style="display:inline;" >
+            <!-- the error message to display when you don fill a right or valid email address  -->
+           <div id="errorMsg" class="error">Please enter a valid email address</div> 
+             <!-- creating the  Modal to be displayed after the news letter form has been fillled  -->
+  <div id="thankYouModal" class="modalnews">
+    <div class="modalnews-content">
+      <span class="close" id="close">&times;</span>
+      <p id="thankYouMessage"></p>
+    </div>
+  </div>
+  </form>
+
+</div>
+
+<!--navigation link section and copyright-->
+<div class="navlink-copyright-sec">
+    <!--navigation link section -->
+<div class="navlink-sec">
+    <!--navigation link writeup and social icons -->
+    <div class="navlink-writeup-icons">
+        <p>Your trusted partner in modern surveillance. We offer smart, affordable, and reliable security camera systems for homes and businesses. </p>
+              <div class="social-icons">
+            <a href="https://wa.me/2348077564104?text=hi%20maleeq%20consistency%20is%20key" target="_blank">  <i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/1GwFAbmG6W/?mibextid=wwXIfr" target="_blank">  <i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/m_alee_q/profilecard/?igsh=MXV4dnFpMXQ3cTNpdA==" target="_blank">  <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/maleeqraheem?s=21" target="_blank">  <i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://snapchat.com/t/U62ysR2i" target="_blank">  <i class="fa-brands fa-square-snapchat"></i></a> 
+           </div>
+ </div>
+   <!--navigation links -->
+ <div class="navigationlinks">
+    <h3>Navigation</h3>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us </a></li>
+        <li><a href="#services">Our Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        <li><a href="#products">Products</a></li>
+      
+    </ul>
+ </div>
+  <!--quick links -->
+  <div class="quicklinks">
+    <h3>Quick link</h3>
+    <ul>
+        <li><a href="#about">FAQs</a></li>
+        <li><a href="#partners">Collaborations</a></li>
+        <li><a href="#products">Pricing</a></li>
+        <li><a href="#services">Works</a></li>
+        <li><a href="404.html">404</a></li>
+    </ul>
+ </div>
+  <!--work hours writeup -->
+ <div class="workhours">
+    <i class="fa-solid fa-clock"></i> 
+    <h3>Work Hours</h3>
+    <p>7AM - 5PM, Mon-Sat</p>
+    <p>Our team is available during the soecified period of time stated above </p>
+    <a href="tel:+2348077564104" class="callbtn">Call Us </a>
+ </div>
+
+</div>
+<hr>
+ <!--copyright writeup -->
+<div class="copyright-sec">
+<p> &copy;2025- Created by Raheem Abdulmalik. All rights reserved </p>
+
+</div>
+
+
+</div>
+
+
+</footer>
+<button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="index.js"></script>
+
+</body>
+</html>
